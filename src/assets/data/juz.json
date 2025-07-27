@@ -1,0 +1,182 @@
+[
+  {
+    "number": 1,
+    "starting_ayah": 1,
+    "number_of_ayahs": 148,
+    "page": 1
+  },
+  {
+    "number": 2,
+    "starting_ayah": 149,
+    "number_of_ayahs": 111,
+    "page": 22
+  },
+  {
+    "number": 3,
+    "starting_ayah": 260,
+    "number_of_ayahs": 126,
+    "page": 42
+  },
+  {
+    "number": 4,
+    "starting_ayah": 386,
+    "number_of_ayahs": 131,
+    "page": 62
+  },
+  {
+    "number": 5,
+    "starting_ayah": 517,
+    "number_of_ayahs": 124,
+    "page": 82
+  },
+  {
+    "number": 6,
+    "starting_ayah": 641,
+    "number_of_ayahs": 110,
+    "page": 102
+  },
+  {
+    "number": 7,
+    "starting_ayah": 751,
+    "number_of_ayahs": 149,
+    "page": 121
+  },
+  {
+    "number": 8,
+    "starting_ayah": 900,
+    "number_of_ayahs": 142,
+    "page": 142
+  },
+  {
+    "number": 9,
+    "starting_ayah": 1042,
+    "number_of_ayahs": 159,
+    "page": 162
+  },
+  {
+    "number": 10,
+    "starting_ayah": 1201,
+    "number_of_ayahs": 127,
+    "page": 182
+  },
+  {
+    "number": 11,
+    "starting_ayah": 1328,
+    "number_of_ayahs": 151,
+    "page": 201
+  },
+  {
+    "number": 12,
+    "starting_ayah": 1479,
+    "number_of_ayahs": 170,
+    "page": 222
+  },
+  {
+    "number": 13,
+    "starting_ayah": 1649,
+    "number_of_ayahs": 154,
+    "page": 242
+  },
+  {
+    "number": 17,
+    "starting_ayah": 2484,
+    "number_of_ayahs": 190,
+    "page": 322
+  },
+  {
+    "number": 14,
+    "starting_ayah": 1803,
+    "number_of_ayahs": 227,
+    "page": 262
+  },
+  {
+    "number": 20,
+    "starting_ayah": 3215,
+    "number_of_ayahs": 171,
+    "page": 382
+  },
+  {
+    "number": 15,
+    "starting_ayah": 2030,
+    "number_of_ayahs": 185,
+    "page": 282
+  },
+  {
+    "number": 16,
+    "starting_ayah": 2215,
+    "number_of_ayahs": 269,
+    "page": 302
+  },
+  {
+    "number": 18,
+    "starting_ayah": 2674,
+    "number_of_ayahs": 202,
+    "page": 342
+  },
+  {
+    "number": 19,
+    "starting_ayah": 2876,
+    "number_of_ayahs": 339,
+    "page": 362
+  },
+  {
+    "number": 21,
+    "starting_ayah": 3386,
+    "number_of_ayahs": 178,
+    "page": 402
+  },
+  {
+    "number": 22,
+    "starting_ayah": 3564,
+    "number_of_ayahs": 169,
+    "page": 422
+  },
+  {
+    "number": 25,
+    "starting_ayah": 4265,
+    "number_of_ayahs": 246,
+    "page": 482
+  },
+  {
+    "number": 23,
+    "starting_ayah": 3733,
+    "number_of_ayahs": 357,
+    "page": 442
+  },
+  {
+    "number": 24,
+    "starting_ayah": 4090,
+    "number_of_ayahs": 175,
+    "page": 462
+  },
+  {
+    "number": 29,
+    "starting_ayah": 5242,
+    "number_of_ayahs": 431,
+    "page": 562
+  },
+  {
+    "number": 26,
+    "starting_ayah": 4511,
+    "number_of_ayahs": 195,
+    "page": 502
+  },
+  {
+    "number": 27,
+    "starting_ayah": 4706,
+    "number_of_ayahs": 399,
+    "page": 522
+  },
+  {
+    "number": 28,
+    "starting_ayah": 5105,
+    "number_of_ayahs": 137,
+    "page": 542
+  },
+  {
+    "number": 30,
+    "starting_ayah": 5673,
+    "number_of_ayahs": 564,
+    "page": 582
+  }
+]
