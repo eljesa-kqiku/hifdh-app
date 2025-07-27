@@ -1,5 +1,5 @@
 <template>
-  <div class="surahs-list">
+  <div>
 
   </div>
 </template>
