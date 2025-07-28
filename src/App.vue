@@ -1,12 +1,12 @@
 <template>
-  <div>
-    {{$t('lbl_app_title')}}
-<!--    <img src="@/assets/images/icon/icon.png">-->
+  <div class="w-3/4 margin-auto h-3/4">
+    <MainContent />
   </div>
 </template>
 
 <script setup>
 
+import MainContent from "@/components/MainContent.vue";
 </script>
 
 <style scoped>

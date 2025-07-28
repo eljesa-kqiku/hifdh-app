@@ -8,5 +8,50 @@
     "ar": "الحفظ",
     "en": "al-Ḥifẓ",
     "sq": "al-Ḥifẓ"
+  },
+  "lbl_surah": {
+    "ar": "",
+    "en": "Surah",
+    "sq": "Sure"
+  },
+  "lbl_juz": {
+    "ar": "",
+    "en": "Juz",
+    "sq": "Xhuz"
+  },
+  "lbl_hizb_quarter": {
+    "ar": "",
+    "en": "Hizb Quarter",
+    "sq": "Cerek Hizb"
+  },
+  "lbl_select": {
+    "ar": "",
+    "en": "Select",
+    "sq": "Zgjedh"
+  },
+  "lbl_page": {
+    "ar": "",
+    "en": "Page",
+    "sq": "Faqe"
+  },
+  "lbl_question_type": {
+    "ar": "",
+    "en": "Question Type",
+    "sq": "Lloji i pyetjes"
+  },
+  "lbl_select_surah": {
+    "ar": "",
+    "en": "Select Surah",
+    "sq": "Zgjedh Suren"
+  },
+  "lbl_select_juz": {
+    "ar": "",
+    "en": "Select Juz",
+    "sq": "Zgjedh Xhuzin"
+  },
+  "lbl_select_hizb_part": {
+    "ar": "",
+    "en": "Select Hizb Part",
+    "sq": "Zgjedh pjesen e Hizbit"
   }
 }

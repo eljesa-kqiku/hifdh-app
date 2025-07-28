@@ -16,7 +16,6 @@ const formattedLanguageKeys = supportedLanguages.map(lang => {
 })?.reduce((acc, obj) => {
     return {...acc, [obj.lang]: obj.messages}
 }, {})
-console.log({formattedLanguageKeys})
 const i18n = createI18n({
     legacy: true,
     locale: 'en',
