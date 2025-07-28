@@ -8,7 +8,7 @@
         </div>
         <div v-if="selectedType === 'surah'" class="input-item w-[200px]">
           <p>{{ $t('lbl_select_surah') }}</p>
-          <n-select v-model:value="selectedSurah" :options="surahOptions"/>
+          <n-select v-model:value="selectedSurah" :options="surahOptions" filterable/>
         </div>
         <div v-if="selectedType === 'juz' || selectedType === 'hizb_quarter'" class="input-item w-[200px]">
           <p>{{ $t('lbl_select_juz') }}</p>

@@ -20,4 +20,10 @@ export default {
 
         return axios.get(url)
     },
+
+    getAyah(num, language){
+        let url = `${PATH}/ayah/${num}${language ? '/' + language : ''}`
+
+        return axios.get(url)
+    },
 }
