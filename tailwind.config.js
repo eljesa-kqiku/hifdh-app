@@ -1,9 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'tablet': { 'min': '600px', 'max': '1024px' }, // Custom breakpoint for tablets
+        'below-1042': { 'max': '1041px' }
+      }
+    }
   },
-  plugins: [],
+  variants: {
+    extend: {}
+  },
+  plugins: []
 }
-
