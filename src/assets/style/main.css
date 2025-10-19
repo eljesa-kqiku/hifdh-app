@@ -16,11 +16,14 @@ body{
   --dark: #242424;
 
   /*--background-color: var(--light);*/
-  --background-color: color-mix(in srgb, var(--light), white 80%);
+  --background-color: color-mix(in srgb, var(--light), white 70%);
+  --background-light-color: color-mix(in srgb, var(--light), white 90%);
+  --border-color: color-mix(in srgb, var(--light), white 50%);
 
   --text-color: var(--dark);
 
 
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow: hidden;
 }

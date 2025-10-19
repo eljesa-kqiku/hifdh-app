@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
-import './style/tailwind.css'
-import './style/main.css'
+import './assets/style/tailwind.css'
+import './assets/style/main.css'
 import App from './App.vue'
 import '@/common/interceptor.js'
 import { createI18n } from 'vue-i18n'
@@ -18,7 +18,7 @@ const formattedLanguageKeys = supportedLanguages.map(lang => {
 }, {})
 const i18n = createI18n({
     legacy: true,
-    locale: 'en',
+    locale: 'sq',
     fallbackLocale: 'en',
     messages: formattedLanguageKeys
 })

@@ -53,5 +53,11 @@
     "ar": "",
     "en": "Select Hizb Part",
     "sq": "Zgjedh pjesen e Hizbit"
+  },
+  "lbl_app_description": {
+    "ar": "اختر سورة أو جزءًا أو حزبًا للتدرب عليه. سيعرض التطبيق آية عشوائية من اختيارك - تذكر الآية التالية من ذاكرتك، ثم اكشفها للتحقق. استخدم الترجمة وتشغيل الصوت لتأكيد حفظك وتحسينه.",
+    "en": "Select a Surah, Juz, or Hizb to practice. The app will display a random ayah from your selection — recall the next ayah from memory, then reveal it to verify. Use the translation and audio playback to confirm and improve your memorization.",
+    "sq": "Zgjidh një Sure, Xhuz apo Hizb për praktikë. Aplikacioni do të shfaqë një ajet të rastësishëm nga zgjedhja jote — kujto ajetin tjetër nga memoria dhe më pas zbuloje për ta verifikuar. Përdor përkthimin dhe dëgjimin audio për të konfirmuar dhe përmirësuar memorizimin tënd."
   }
+
 }

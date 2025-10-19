@@ -1,21 +1,23 @@
 <template>
-  <div class="main-content">
+  <div class="main-content w-full">
     <div class="inputs-wrapper">
       <div class="flex gap-3 items-end">
         <div class="input-item">
           <p>{{ $t('lbl_question_type') }}</p>
-          <n-select v-model:value="selectedType" :options="typeOptions"/>
+          <n-select v-model:value="selectedType" :options="typeOptions"  size="large"/>
         </div>
         <div v-if="selectedType === 'surah'" class="input-item w-[200px]">
           <p>{{ $t('lbl_select_surah') }}</p>
-          <n-select v-model:value="selectedSurah" :options="surahOptions" filterable/>
+          <n-select v-model:value="selectedSurah" :options="surahOptions" filterable size="large"/>
         </div>
         <div v-if="selectedType === 'juz' || selectedType === 'hizb_quarter'" class="input-item w-[200px]">
           <p>{{ $t('lbl_select_juz') }}</p>
           <n-select v-model:value="selectedJuz"
                     :options="juzOptions"
                     :render-label="renderLabel"
-                    :render-tag="renderSelectTag"/>
+                    :render-tag="renderSelectTag"
+                    size="large"
+          />
         </div>
         <div v-if="selectedType === 'hizb_quarter'" class="input-item w-[200px]">
           <p>{{ $t('lbl_select_hizb_part') }}</p>
@@ -23,9 +25,10 @@
                     :options="hizbOptions"
                     :render-label="renderLabel"
                     :render-tag="renderSelectTag"
+                    size="large"
           />
         </div>
-        <n-button type="success" @click="setSelection">{{ $t('lbl_select') }}</n-button>
+        <n-button type="success" @click="setSelection" size="large">{{ $t('lbl_select') }}</n-button>
       </div>
     </div>
   </div>
@@ -44,7 +47,7 @@ const {locale} = useI18n()
 const emit = defineEmits(["setSelection"])
 
 const selectedType = ref("surah")
-const selectedSurah = ref("سُورَةُ ٱلْفَاتِحَة")
+const selectedSurah = ref("Al-Faatiha")
 const selectedJuz = ref(1)
 const selectedHizb = ref(1)
 
