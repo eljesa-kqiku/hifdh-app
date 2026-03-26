@@ -13,8 +13,9 @@ export default defineConfig({
     },
   },
   base: './',
+  host: '0.0.0.0',
   devServer: {
-    host: 'localhost',
+    host: '0.0.0.0',
     allowedHosts: 'all'
   },
 })
