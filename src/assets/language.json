@@ -88,5 +88,15 @@
     "ar": "آية جديدة",
     "en": "New Ayah",
     "sq": "Ajet i ri"
+  },
+  "lbl_play": {
+    "ar": "تشغيل",
+    "en": "Play",
+    "sq": "Luaj"
+  },
+  "lbl_pause": {
+    "ar": "إيقاف مؤقت",
+    "en": "Pause",
+    "sq": "Pauzo"
   }
 }

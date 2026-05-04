@@ -19,9 +19,33 @@
           <span class="ayah-card__label">
             {{ index === 0 ? $t('lbl_current_ayah') : nextLabel(index) }}
           </span>
-          <span v-if="item.revealed && item.data?.numberInSurah" class="ayah-card__badge">
-            {{ item.data.surah?.englishName }} · {{ item.data.numberInSurah }}
-          </span>
+          <div v-if="item.revealed" class="ayah-card__meta">
+            <span v-if="item.data?.numberInSurah" class="ayah-card__badge">
+              {{ item.data.surah?.englishName }} · {{ item.data.numberInSurah }}
+            </span>
+            <button
+              type="button"
+              class="play-btn"
+              :class="{ playing: isPlaying(item.number), loading: isLoading(item.number) }"
+              :aria-label="isPlaying(item.number) ? $t('lbl_pause') : $t('lbl_play')"
+              @click.stop="togglePlay(item.number)"
+            >
+              <span v-if="isLoading(item.number)" class="play-btn__spinner" aria-hidden="true"></span>
+              <svg
+                v-else-if="isPlaying(item.number)"
+                viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"
+              >
+                <rect x="6" y="5" width="4" height="14" rx="1"/>
+                <rect x="14" y="5" width="4" height="14" rx="1"/>
+              </svg>
+              <svg
+                v-else
+                viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"
+              >
+                <path d="M8 5.14v13.72a1 1 0 0 0 1.55.83l10.4-6.86a1 1 0 0 0 0-1.66L9.55 4.31A1 1 0 0 0 8 5.14z"/>
+              </svg>
+            </button>
+          </div>
         </header>
 
         <p v-if="item.revealed" class="ayah-text" dir="rtl">{{ item.data.text }}</p>
@@ -51,10 +75,13 @@
 </template>
 
 <script setup>
-import { nextTick, ref, watch } from "vue";
+import { nextTick, onBeforeUnmount, ref, watch } from "vue";
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
+
+const RECITER_EDITION = 'ar.alafasy'
+const AUDIO_BASE = `https://cdn.islamic.network/quran/audio/128/${RECITER_EDITION}`
 
 const props = defineProps({
   ayahs: {
@@ -73,6 +100,65 @@ function nextLabel(index) {
   return index === 1 ? t('lbl_next_ayah') : `${t('lbl_next_ayah')} +${index - 1}`
 }
 
+const playingNumber = ref(null)
+const loadingNumber = ref(null)
+let audio = null
+
+function isPlaying(number) {
+  return playingNumber.value === number
+}
+function isLoading(number) {
+  return loadingNumber.value === number
+}
+
+function stopAudio() {
+  if (audio) {
+    audio.pause()
+    audio.src = ''
+  }
+  playingNumber.value = null
+  loadingNumber.value = null
+}
+
+function togglePlay(number) {
+  if (playingNumber.value === number) {
+    stopAudio()
+    return
+  }
+
+  if (audio) {
+    audio.pause()
+  } else {
+    audio = new Audio()
+    audio.preload = 'auto'
+    audio.addEventListener('ended', () => {
+      playingNumber.value = null
+    })
+    audio.addEventListener('error', () => {
+      loadingNumber.value = null
+      playingNumber.value = null
+    })
+    audio.addEventListener('playing', () => {
+      loadingNumber.value = null
+    })
+  }
+
+  loadingNumber.value = number
+  playingNumber.value = null
+  audio.src = `${AUDIO_BASE}/${number}.mp3`
+  const playPromise = audio.play()
+  if (playPromise && typeof playPromise.then === 'function') {
+    playPromise
+      .then(() => {
+        playingNumber.value = number
+      })
+      .catch(() => {
+        loadingNumber.value = null
+        playingNumber.value = null
+      })
+  }
+}
+
 watch(() => props.ayahs.length, async (newLen, oldLen) => {
   if (newLen > oldLen && oldLen > 0) {
     await nextTick()
@@ -83,7 +169,13 @@ watch(() => props.ayahs.length, async (newLen, oldLen) => {
   }
   if (newLen < oldLen) {
     cardRefs.value = cardRefs.value.slice(0, newLen)
+    stopAudio()
   }
+})
+
+onBeforeUnmount(() => {
+  stopAudio()
+  audio = null
 })
 </script>
 
@@ -145,6 +237,13 @@ watch(() => props.ayahs.length, async (newLen, oldLen) => {
   color: var(--main-color);
 }
 
+.ayah-card__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
 .ayah-card__badge {
   font-size: 12px;
   font-weight: 600;
@@ -157,6 +256,58 @@ watch(() => props.ayahs.length, async (newLen, oldLen) => {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 60%;
+}
+
+.play-btn {
+  appearance: none;
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  color: var(--main-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex: 0 0 auto;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease, color 0.15s ease;
+}
+
+.play-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  background: var(--light);
+}
+
+.play-btn.playing {
+  background: linear-gradient(135deg, var(--main-color-soft), var(--main-color));
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 6px 16px rgba(15, 122, 74, 0.3);
+}
+
+.play-btn.playing:hover {
+  background: linear-gradient(135deg, var(--main-color-soft), var(--main-color));
+  color: #ffffff;
+}
+
+.play-btn.loading {
+  cursor: wait;
+}
+
+.play-btn__spinner {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  border-top-color: var(--main-color);
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .ayah-text {
