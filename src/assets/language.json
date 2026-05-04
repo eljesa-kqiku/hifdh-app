@@ -10,47 +10,47 @@
     "sq": "al-Ḥifẓ"
   },
   "lbl_surah": {
-    "ar": "",
+    "ar": "سورة",
     "en": "Surah",
     "sq": "Sure"
   },
   "lbl_juz": {
-    "ar": "",
+    "ar": "جزء",
     "en": "Juz",
     "sq": "Xhuz"
   },
   "lbl_hizb_quarter": {
-    "ar": "",
+    "ar": "ربع حزب",
     "en": "Hizb Quarter",
     "sq": "Cerek Hizb"
   },
   "lbl_select": {
-    "ar": "",
+    "ar": "اختر",
     "en": "Select",
     "sq": "Zgjedh"
   },
   "lbl_page": {
-    "ar": "",
+    "ar": "صفحة",
     "en": "Page",
     "sq": "Faqe"
   },
   "lbl_question_type": {
-    "ar": "",
+    "ar": "نوع السؤال",
     "en": "Question Type",
     "sq": "Lloji i pyetjes"
   },
   "lbl_select_surah": {
-    "ar": "",
+    "ar": "اختر السورة",
     "en": "Select Surah",
     "sq": "Zgjedh Suren"
   },
   "lbl_select_juz": {
-    "ar": "",
+    "ar": "اختر الجزء",
     "en": "Select Juz",
     "sq": "Zgjedh Xhuzin"
   },
   "lbl_select_hizb_part": {
-    "ar": "",
+    "ar": "اختر جزء الحزب",
     "en": "Select Hizb Part",
     "sq": "Zgjedh pjesen e Hizbit"
   },
@@ -58,6 +58,35 @@
     "ar": "اختر سورة أو جزءًا أو حزبًا للتدرب عليه. سيعرض التطبيق آية عشوائية من اختيارك - تذكر الآية التالية من ذاكرتك، ثم اكشفها للتحقق. استخدم الترجمة وتشغيل الصوت لتأكيد حفظك وتحسينه.",
     "en": "Select a Surah, Juz, or Hizb to practice. The app will display a random ayah from your selection — recall the next ayah from memory, then reveal it to verify. Use the translation and audio playback to confirm and improve your memorization.",
     "sq": "Zgjidh një Sure, Xhuz apo Hizb për praktikë. Aplikacioni do të shfaqë një ajet të rastësishëm nga zgjedhja jote — kujto ajetin tjetër nga memoria dhe më pas zbuloje për ta verifikuar. Përdor përkthimin dhe dëgjimin audio për të konfirmuar dhe përmirësuar memorizimin tënd."
+  },
+  "lbl_loading": {
+    "ar": "جاري التحميل...",
+    "en": "Loading…",
+    "sq": "Duke u ngarkuar…"
+  },
+  "lbl_current_ayah": {
+    "ar": "الآية الحالية",
+    "en": "Current Ayah",
+    "sq": "Ajeti aktual"
+  },
+  "lbl_next_ayah": {
+    "ar": "الآية التالية",
+    "en": "Next Ayah",
+    "sq": "Ajeti tjetër"
+  },
+  "lbl_reveal": {
+    "ar": "اظهار",
+    "en": "Reveal",
+    "sq": "Zbulo"
+  },
+  "lbl_tap_to_reveal": {
+    "ar": "انقر للكشف عن الآية التالية",
+    "en": "Tap to reveal the next ayah",
+    "sq": "Kliko për të zbuluar ajetin tjetër"
+  },
+  "lbl_new_ayah": {
+    "ar": "آية جديدة",
+    "en": "New Ayah",
+    "sq": "Ajet i ri"
   }
-
 }
