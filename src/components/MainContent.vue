@@ -6,44 +6,93 @@
       <p class="hero__description">{{ $t('lbl_app_description') }}</p>
     </section>
 
-    <section class="panel">
+    <div class="mode-switch" role="tablist" :aria-label="$t('lbl_question_type')">
+      <button
+        v-for="opt in modeOptions"
+        :key="opt.value"
+        role="tab"
+        :aria-selected="mode === opt.value"
+        :class="['mode-switch__btn', { active: mode === opt.value }]"
+        @click="setMode(opt.value)"
+      >
+        <span class="mode-switch__icon" aria-hidden="true">
+          <component :is="opt.icon" />
+        </span>
+        <span>{{ opt.label }}</span>
+      </button>
+    </div>
+
+    <section v-if="mode === 'memorization'" class="panel">
       <AyahSelctionInputs @set-selection="selectQuestionType" :loading="loading" />
     </section>
 
-    <section v-if="ayahs.length || loading" class="results">
-      <div v-if="loading" class="loading-state">
+    <section v-if="showResultsSection" class="results">
+      <div v-if="loading && mode === 'memorization'" class="loading-state">
         <div class="spinner" aria-hidden="true"></div>
         <p>{{ $t('lbl_loading') }}</p>
       </div>
+
       <AyahContainer
-        v-else-if="ayahs.length"
+        v-else-if="mode === 'memorization' && ayahs.length"
         :ayahs="ayahs"
         @reveal="onReveal"
         @next="searchAyah"
       />
+
+      <RepetitionCounter v-else-if="mode === 'repetition'" />
     </section>
   </div>
 </template>
 
 <script setup>
 import AyahContainer from "@/components/AyahContainer.vue";
+import RepetitionCounter from "@/components/RepetitionCounter.vue";
 import { useI18n } from 'vue-i18n'
 import AyahSelctionInputs from "@/components/AyahSelctionInputs.vue";
-import { ref } from "vue";
+import { computed, h, ref } from "vue";
 import Service from "../common/service.js";
 
 const { t } = useI18n()
-const { locale } = useI18n()
 
 const LAST_AYAH_NUMBER = 6236
 
+const mode = ref('memorization')
 const ayahRange = ref(null)
 const ayahs = ref([])
 const loading = ref(false)
 
+const IconMemorize = () => h('svg', { viewBox: '0 0 24 24', width: 16, height: 16, fill: 'none', stroke: 'currentColor', 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, [
+  h('path', { d: 'M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z' }),
+  h('path', { d: 'M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z' }),
+])
+const IconCounter = () => h('svg', { viewBox: '0 0 24 24', width: 16, height: 16, fill: 'none', stroke: 'currentColor', 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, [
+  h('rect', { x: 3, y: 4, width: 18, height: 16, rx: 3 }),
+  h('line', { x1: 12, y1: 9, x2: 12, y2: 15 }),
+  h('line', { x1: 9, y1: 12, x2: 15, y2: 12 }),
+])
+
+const modeOptions = computed(() => [
+  { label: t('lbl_mode_memorization'), value: 'memorization', icon: IconMemorize },
+  { label: t('lbl_mode_repetition'), value: 'repetition', icon: IconCounter },
+])
+
+const showResultsSection = computed(() => {
+  if (mode.value === 'repetition') return true
+  return ayahs.value.length > 0 || loading.value
+})
+
+function setMode(value) {
+  if (mode.value === value) return
+  mode.value = value
+  ayahs.value = []
+  ayahRange.value = null
+}
+
 function selectQuestionType(response) {
   ayahRange.value = { starting_ayah: response.starting_ayah, ending_ayah: response.ending_ayah }
-  searchAyah()
+  if (mode.value === 'memorization') {
+    searchAyah()
+  }
 }
 
 async function searchAyah() {
@@ -131,6 +180,52 @@ async function onReveal(index) {
   line-height: 1.6;
 }
 
+.mode-switch {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  padding: 4px;
+  background: var(--light);
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+}
+
+.mode-switch__btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 10px 6px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mode-switch__btn:hover {
+  color: var(--dark);
+}
+
+.mode-switch__btn.active {
+  background: #ffffff;
+  color: var(--main-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.mode-switch__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .panel {
   background: var(--surface-color);
   border: 1px solid var(--border-color);
@@ -182,6 +277,10 @@ async function onReveal(index) {
   }
   .panel {
     padding: 24px;
+  }
+  .mode-switch__btn {
+    font-size: 14px;
+    padding: 12px 10px;
   }
 }
 

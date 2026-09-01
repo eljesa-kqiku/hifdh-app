@@ -20,17 +20,36 @@
             {{ index === 0 ? $t('lbl_current_ayah') : nextLabel(index) }}
           </span>
           <div v-if="item.revealed" class="ayah-card__meta">
-            <span v-if="item.data?.numberInSurah" class="ayah-card__badge">
-              {{ item.data.surah?.englishName }} · {{ item.data.numberInSurah }}
-            </span>
+            <Transition name="badge-pop">
+              <span
+                v-if="isInfoVisible(item.number) && item.data?.numberInSurah"
+                class="ayah-card__badge"
+              >
+                {{ item.data.surah?.englishName }} · {{ item.data.numberInSurah }}
+              </span>
+            </Transition>
+            <button
+              v-if="item.data?.numberInSurah"
+              type="button"
+              class="icon-btn"
+              :class="{ active: isInfoVisible(item.number) }"
+              :aria-label="isInfoVisible(item.number) ? $t('lbl_hide_info') : $t('lbl_show_info')"
+              @click.stop="toggleInfo(item.number)"
+            >
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="11" x2="12" y2="16"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+              </svg>
+            </button>
             <button
               type="button"
-              class="play-btn"
+              class="icon-btn"
               :class="{ playing: isPlaying(item.number), loading: isLoading(item.number) }"
               :aria-label="isPlaying(item.number) ? $t('lbl_pause') : $t('lbl_play')"
               @click.stop="togglePlay(item.number)"
             >
-              <span v-if="isLoading(item.number)" class="play-btn__spinner" aria-hidden="true"></span>
+              <span v-if="isLoading(item.number)" class="icon-btn__spinner" aria-hidden="true"></span>
               <svg
                 v-else-if="isPlaying(item.number)"
                 viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"
@@ -102,6 +121,7 @@ function nextLabel(index) {
 
 const playingNumber = ref(null)
 const loadingNumber = ref(null)
+const infoVisible = ref(new Set())
 let audio = null
 
 function isPlaying(number) {
@@ -109,6 +129,15 @@ function isPlaying(number) {
 }
 function isLoading(number) {
   return loadingNumber.value === number
+}
+function isInfoVisible(number) {
+  return infoVisible.value.has(number)
+}
+function toggleInfo(number) {
+  const next = new Set(infoVisible.value)
+  if (next.has(number)) next.delete(number)
+  else next.add(number)
+  infoVisible.value = next
 }
 
 function stopAudio() {
@@ -170,6 +199,7 @@ watch(() => props.ayahs.length, async (newLen, oldLen) => {
   if (newLen < oldLen) {
     cardRefs.value = cardRefs.value.slice(0, newLen)
     stopAudio()
+    infoVisible.value = new Set()
   }
 })
 
@@ -242,6 +272,8 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 8px;
   min-width: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .ayah-card__badge {
@@ -253,12 +285,9 @@ onBeforeUnmount(() => {
   color: var(--main-color);
   border: 1px solid var(--border-color);
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 60%;
 }
 
-.play-btn {
+.icon-btn {
   appearance: none;
   border: 1px solid var(--border-color);
   background: #ffffff;
@@ -271,39 +300,55 @@ onBeforeUnmount(() => {
   justify-content: center;
   cursor: pointer;
   flex: 0 0 auto;
+  padding: 0;
   box-shadow: var(--shadow-sm);
-  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease, color 0.15s ease;
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
-.play-btn:hover {
+.icon-btn:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
   background: var(--light);
 }
 
-.play-btn.playing {
+.icon-btn.active {
+  background: var(--light);
+  border-color: var(--main-color-soft);
+}
+
+.icon-btn.playing {
   background: linear-gradient(135deg, var(--main-color-soft), var(--main-color));
   color: #ffffff;
   border-color: transparent;
   box-shadow: 0 6px 16px rgba(15, 122, 74, 0.3);
 }
 
-.play-btn.playing:hover {
+.icon-btn.playing:hover {
   background: linear-gradient(135deg, var(--main-color-soft), var(--main-color));
   color: #ffffff;
 }
 
-.play-btn.loading {
+.icon-btn.loading {
   cursor: wait;
 }
 
-.play-btn__spinner {
+.icon-btn__spinner {
   width: 14px;
   height: 14px;
   border-radius: 50%;
   border: 2px solid var(--border-color);
   border-top-color: var(--main-color);
   animation: spin 0.9s linear infinite;
+}
+
+.badge-pop-enter-active,
+.badge-pop-leave-active {
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.badge-pop-enter-from,
+.badge-pop-leave-to {
+  opacity: 0;
+  transform: scale(0.85);
 }
 
 @keyframes spin {

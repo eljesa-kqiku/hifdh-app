@@ -28,7 +28,7 @@
         />
       </div>
 
-      <div v-if="selectedType === 'juz' || selectedType === 'hizb_quarter'" class="input-item">
+      <div v-if="selectedType === 'juz'" class="input-item">
         <label class="input-label">{{ $t('lbl_select_juz') }}</label>
         <n-select
           v-model:value="selectedJuz"
@@ -40,20 +40,36 @@
         />
       </div>
 
-      <div v-if="selectedType === 'hizb_quarter'" class="input-item">
-        <label class="input-label">{{ $t('lbl_select_hizb_part') }}</label>
-        <n-select
-          v-model:value="selectedHizb"
-          :options="hizbOptions"
-          :render-label="renderLabel"
-          :render-tag="renderSelectTag"
-          size="large"
-          :theme-overrides="selectThemeOverrides"
-        />
-      </div>
+      <template v-if="selectedType === 'custom_pages'">
+        <div class="input-item">
+          <label class="input-label">{{ $t('lbl_from_page') }}</label>
+          <n-input-number
+            v-model:value="fromPage"
+            :min="1"
+            :max="totalPages"
+            size="large"
+            :theme-overrides="inputNumberThemeOverrides"
+            :placeholder="String(1)"
+          />
+        </div>
+        <div class="input-item">
+          <label class="input-label">{{ $t('lbl_to_page') }}</label>
+          <n-input-number
+            v-model:value="toPage"
+            :min="1"
+            :max="totalPages"
+            size="large"
+            :theme-overrides="inputNumberThemeOverrides"
+            :placeholder="String(totalPages)"
+          />
+        </div>
+        <p class="range-hint">
+          {{ $t('lbl_pages_range') }}: 1 – {{ totalPages }}
+        </p>
+      </template>
     </div>
 
-    <button class="cta" :disabled="loading" @click="setSelection">
+    <button class="cta" :disabled="loading || !canSubmit" @click="setSelection">
       <span class="cta__label">{{ $t('lbl_select') }}</span>
       <svg class="cta__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M5 12h14"/>
@@ -64,10 +80,10 @@
 </template>
 
 <script setup>
-import { NSelect, NText } from 'naive-ui'
+import { NSelect, NText, NInputNumber } from 'naive-ui'
 import Surahs from "@/assets/data/surahs.json"
 import Juz from "@/assets/data/juz.json"
-import Hizb from "@/assets/data/hizb.json"
+import Pages from "@/assets/data/pages.json"
 import { computed, h, ref } from "vue"
 import { useI18n } from 'vue-i18n'
 
@@ -82,7 +98,10 @@ defineProps({
 const selectedType = ref("surah")
 const selectedSurah = ref("Al-Faatiha")
 const selectedJuz = ref(1)
-const selectedHizb = ref(1)
+
+const totalPages = Pages.length
+const fromPage = ref(1)
+const toPage = ref(totalPages)
 
 const IconSurah = () => h('svg', { viewBox: '0 0 24 24', width: 16, height: 16, fill: 'none', stroke: 'currentColor', 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, [
   h('path', { d: 'M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z' }),
@@ -93,16 +112,17 @@ const IconJuz = () => h('svg', { viewBox: '0 0 24 24', width: 16, height: 16, fi
   h('path', { d: 'M3 9h18' }),
   h('path', { d: 'M9 21V9' }),
 ])
-const IconHizb = () => h('svg', { viewBox: '0 0 24 24', width: 16, height: 16, fill: 'none', stroke: 'currentColor', 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, [
-  h('circle', { cx: 12, cy: 12, r: 9 }),
-  h('path', { d: 'M12 3v18' }),
-  h('path', { d: 'M3 12h18' }),
+const IconPages = () => h('svg', { viewBox: '0 0 24 24', width: 16, height: 16, fill: 'none', stroke: 'currentColor', 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, [
+  h('path', { d: 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' }),
+  h('polyline', { points: '14 2 14 8 20 8' }),
+  h('line', { x1: 8, y1: 13, x2: 16, y2: 13 }),
+  h('line', { x1: 8, y1: 17, x2: 13, y2: 17 }),
 ])
 
 const typeOptions = computed(() => [
   { label: t('lbl_surah'), value: 'surah', icon: IconSurah },
   { label: t('lbl_juz'), value: 'juz', icon: IconJuz },
-  { label: t('lbl_hizb_quarter'), value: 'hizb_quarter', icon: IconHizb },
+  { label: t('lbl_custom_pages'), value: 'custom_pages', icon: IconPages },
 ])
 
 const surahOptions = computed(() => Surahs?.map(surah => ({
@@ -114,13 +134,6 @@ const juzOptions = Juz?.map(juz => ({
   value: juz.number,
   description: `(${t('lbl_page')} ${juz.page})`,
 }))
-const hizbOptions = computed(() => {
-  return Hizb?.slice((selectedJuz.value - 1) * 8, selectedJuz.value * 8).map(element => ({
-    label: element.number,
-    value: element.number,
-    description: `(${t('lbl_page')} ${element.page})`,
-  }))
-})
 
 const selectThemeOverrides = {
   peers: {
@@ -132,6 +145,22 @@ const selectThemeOverrides = {
       borderFocus: '1px solid var(--main-color)',
       boxShadowFocus: '0 0 0 3px rgba(52,163,107,0.18)',
       heightLarge: '48px',
+    },
+  },
+}
+const inputNumberThemeOverrides = {
+  peers: {
+    Input: {
+      borderRadius: '12px',
+      border: '1px solid var(--border-color)',
+      borderHover: '1px solid var(--main-color-soft)',
+      borderFocus: '1px solid var(--main-color)',
+      boxShadowFocus: '0 0 0 3px rgba(52,163,107,0.18)',
+      heightLarge: '48px',
+      color: '#ffffff',
+    },
+    Button: {
+      borderRadiusMedium: '10px',
     },
   },
 }
@@ -153,6 +182,13 @@ const renderLabel = (option) => {
   )
 }
 
+const canSubmit = computed(() => {
+  if (selectedType.value !== 'custom_pages') return true
+  return Number.isInteger(fromPage.value) && Number.isInteger(toPage.value)
+    && fromPage.value >= 1 && toPage.value <= totalPages
+    && fromPage.value <= toPage.value
+})
+
 function setSelection() {
   let response = null
   if (selectedType.value === 'surah') {
@@ -163,9 +199,14 @@ function setSelection() {
     const juz = Juz?.find(s => s.number === selectedJuz.value)
     response = { starting_ayah: juz.starting_ayah, ending_ayah: juz.starting_ayah + juz.number_of_ayahs }
   }
-  if (selectedType.value === 'hizb_quarter') {
-    const hizb = Hizb?.find(s => s.number === selectedHizb.value)
-    response = { starting_ayah: hizb.starting_ayah, ending_ayah: hizb.starting_ayah + hizb.number_of_ayahs }
+  if (selectedType.value === 'custom_pages') {
+    if (!canSubmit.value) return
+    const startPage = Pages.find(p => p.number === fromPage.value)
+    const endPage = Pages.find(p => p.number === toPage.value)
+    response = {
+      starting_ayah: startPage.starting_ayah,
+      ending_ayah: endPage.starting_ayah + endPage.number_of_ayahs,
+    }
   }
   emit('setSelection', { ...response })
 }
@@ -239,6 +280,13 @@ function setSelection() {
 .input-label {
   font-size: 13px;
   font-weight: 600;
+  color: var(--text-muted);
+}
+
+.range-hint {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 12px;
   color: var(--text-muted);
 }
 

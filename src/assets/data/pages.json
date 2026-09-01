@@ -1,0 +1,3022 @@
+[
+  {
+    "number": 1,
+    "starting_ayah": 1,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 2,
+    "starting_ayah": 8,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 3,
+    "starting_ayah": 13,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 4,
+    "starting_ayah": 24,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 5,
+    "starting_ayah": 32,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 6,
+    "starting_ayah": 37,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 7,
+    "starting_ayah": 45,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 8,
+    "starting_ayah": 56,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 9,
+    "starting_ayah": 65,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 10,
+    "starting_ayah": 69,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 11,
+    "starting_ayah": 77,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 12,
+    "starting_ayah": 84,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 13,
+    "starting_ayah": 91,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 14,
+    "starting_ayah": 96,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 15,
+    "starting_ayah": 101,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 16,
+    "starting_ayah": 109,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 17,
+    "starting_ayah": 113,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 18,
+    "starting_ayah": 120,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 19,
+    "starting_ayah": 127,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 20,
+    "starting_ayah": 134,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 21,
+    "starting_ayah": 142,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 22,
+    "starting_ayah": 149,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 23,
+    "starting_ayah": 153,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 24,
+    "starting_ayah": 161,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 25,
+    "starting_ayah": 171,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 26,
+    "starting_ayah": 177,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 27,
+    "starting_ayah": 184,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 28,
+    "starting_ayah": 189,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 29,
+    "starting_ayah": 194,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 30,
+    "starting_ayah": 198,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 31,
+    "starting_ayah": 204,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 32,
+    "starting_ayah": 210,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 33,
+    "starting_ayah": 218,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 34,
+    "starting_ayah": 223,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 35,
+    "starting_ayah": 227,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 36,
+    "starting_ayah": 232,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 37,
+    "starting_ayah": 238,
+    "number_of_ayahs": 3
+  },
+  {
+    "number": 38,
+    "starting_ayah": 241,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 39,
+    "starting_ayah": 245,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 40,
+    "starting_ayah": 253,
+    "number_of_ayahs": 3
+  },
+  {
+    "number": 41,
+    "starting_ayah": 256,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 42,
+    "starting_ayah": 260,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 43,
+    "starting_ayah": 264,
+    "number_of_ayahs": 3
+  },
+  {
+    "number": 44,
+    "starting_ayah": 267,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 45,
+    "starting_ayah": 272,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 46,
+    "starting_ayah": 277,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 47,
+    "starting_ayah": 282,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 48,
+    "starting_ayah": 289,
+    "number_of_ayahs": 1
+  },
+  {
+    "number": 49,
+    "starting_ayah": 290,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 50,
+    "starting_ayah": 294,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 51,
+    "starting_ayah": 303,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 52,
+    "starting_ayah": 309,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 53,
+    "starting_ayah": 316,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 54,
+    "starting_ayah": 323,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 55,
+    "starting_ayah": 331,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 56,
+    "starting_ayah": 339,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 57,
+    "starting_ayah": 346,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 58,
+    "starting_ayah": 355,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 59,
+    "starting_ayah": 364,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 60,
+    "starting_ayah": 371,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 61,
+    "starting_ayah": 377,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 62,
+    "starting_ayah": 385,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 63,
+    "starting_ayah": 394,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 64,
+    "starting_ayah": 402,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 65,
+    "starting_ayah": 409,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 66,
+    "starting_ayah": 415,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 67,
+    "starting_ayah": 426,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 68,
+    "starting_ayah": 434,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 69,
+    "starting_ayah": 442,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 70,
+    "starting_ayah": 447,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 71,
+    "starting_ayah": 451,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 72,
+    "starting_ayah": 459,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 73,
+    "starting_ayah": 467,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 74,
+    "starting_ayah": 474,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 75,
+    "starting_ayah": 480,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 76,
+    "starting_ayah": 488,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 77,
+    "starting_ayah": 494,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 78,
+    "starting_ayah": 500,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 79,
+    "starting_ayah": 505,
+    "number_of_ayahs": 3
+  },
+  {
+    "number": 80,
+    "starting_ayah": 508,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 81,
+    "starting_ayah": 513,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 82,
+    "starting_ayah": 517,
+    "number_of_ayahs": 3
+  },
+  {
+    "number": 83,
+    "starting_ayah": 520,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 84,
+    "starting_ayah": 527,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 85,
+    "starting_ayah": 531,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 86,
+    "starting_ayah": 538,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 87,
+    "starting_ayah": 545,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 88,
+    "starting_ayah": 553,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 89,
+    "starting_ayah": 559,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 90,
+    "starting_ayah": 568,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 91,
+    "starting_ayah": 573,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 92,
+    "starting_ayah": 580,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 93,
+    "starting_ayah": 585,
+    "number_of_ayahs": 3
+  },
+  {
+    "number": 94,
+    "starting_ayah": 588,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 95,
+    "starting_ayah": 595,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 96,
+    "starting_ayah": 599,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 97,
+    "starting_ayah": 607,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 98,
+    "starting_ayah": 615,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 99,
+    "starting_ayah": 621,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 100,
+    "starting_ayah": 628,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 101,
+    "starting_ayah": 634,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 102,
+    "starting_ayah": 641,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 103,
+    "starting_ayah": 648,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 104,
+    "starting_ayah": 656,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 105,
+    "starting_ayah": 664,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 106,
+    "starting_ayah": 669,
+    "number_of_ayahs": 3
+  },
+  {
+    "number": 107,
+    "starting_ayah": 672,
+    "number_of_ayahs": 3
+  },
+  {
+    "number": 108,
+    "starting_ayah": 675,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 109,
+    "starting_ayah": 679,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 110,
+    "starting_ayah": 683,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 111,
+    "starting_ayah": 687,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 112,
+    "starting_ayah": 693,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 113,
+    "starting_ayah": 701,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 114,
+    "starting_ayah": 706,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 115,
+    "starting_ayah": 711,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 116,
+    "starting_ayah": 715,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 117,
+    "starting_ayah": 720,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 118,
+    "starting_ayah": 727,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 119,
+    "starting_ayah": 734,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 120,
+    "starting_ayah": 740,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 121,
+    "starting_ayah": 746,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 122,
+    "starting_ayah": 752,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 123,
+    "starting_ayah": 759,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 124,
+    "starting_ayah": 765,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 125,
+    "starting_ayah": 773,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 126,
+    "starting_ayah": 778,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 127,
+    "starting_ayah": 783,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 128,
+    "starting_ayah": 790,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 129,
+    "starting_ayah": 798,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 130,
+    "starting_ayah": 808,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 131,
+    "starting_ayah": 817,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 132,
+    "starting_ayah": 825,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 133,
+    "starting_ayah": 834,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 134,
+    "starting_ayah": 842,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 135,
+    "starting_ayah": 849,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 136,
+    "starting_ayah": 858,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 137,
+    "starting_ayah": 863,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 138,
+    "starting_ayah": 871,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 139,
+    "starting_ayah": 880,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 140,
+    "starting_ayah": 884,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 141,
+    "starting_ayah": 891,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 142,
+    "starting_ayah": 900,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 143,
+    "starting_ayah": 908,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 144,
+    "starting_ayah": 914,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 145,
+    "starting_ayah": 921,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 146,
+    "starting_ayah": 927,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 147,
+    "starting_ayah": 932,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 148,
+    "starting_ayah": 936,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 149,
+    "starting_ayah": 941,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 150,
+    "starting_ayah": 947,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 151,
+    "starting_ayah": 955,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 152,
+    "starting_ayah": 966,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 153,
+    "starting_ayah": 977,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 154,
+    "starting_ayah": 985,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 155,
+    "starting_ayah": 992,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 156,
+    "starting_ayah": 998,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 157,
+    "starting_ayah": 1006,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 158,
+    "starting_ayah": 1012,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 159,
+    "starting_ayah": 1022,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 160,
+    "starting_ayah": 1028,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 161,
+    "starting_ayah": 1036,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 162,
+    "starting_ayah": 1042,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 163,
+    "starting_ayah": 1050,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 164,
+    "starting_ayah": 1059,
+    "number_of_ayahs": 16
+  },
+  {
+    "number": 165,
+    "starting_ayah": 1075,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 166,
+    "starting_ayah": 1085,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 167,
+    "starting_ayah": 1092,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 168,
+    "starting_ayah": 1098,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 169,
+    "starting_ayah": 1104,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 170,
+    "starting_ayah": 1110,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 171,
+    "starting_ayah": 1114,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 172,
+    "starting_ayah": 1118,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 173,
+    "starting_ayah": 1125,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 174,
+    "starting_ayah": 1133,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 175,
+    "starting_ayah": 1142,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 176,
+    "starting_ayah": 1150,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 177,
+    "starting_ayah": 1161,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 178,
+    "starting_ayah": 1169,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 179,
+    "starting_ayah": 1177,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 180,
+    "starting_ayah": 1186,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 181,
+    "starting_ayah": 1194,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 182,
+    "starting_ayah": 1201,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 183,
+    "starting_ayah": 1206,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 184,
+    "starting_ayah": 1213,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 185,
+    "starting_ayah": 1222,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 186,
+    "starting_ayah": 1230,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 187,
+    "starting_ayah": 1236,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 188,
+    "starting_ayah": 1242,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 189,
+    "starting_ayah": 1249,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 190,
+    "starting_ayah": 1256,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 191,
+    "starting_ayah": 1262,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 192,
+    "starting_ayah": 1267,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 193,
+    "starting_ayah": 1272,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 194,
+    "starting_ayah": 1276,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 195,
+    "starting_ayah": 1283,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 196,
+    "starting_ayah": 1290,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 197,
+    "starting_ayah": 1297,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 198,
+    "starting_ayah": 1304,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 199,
+    "starting_ayah": 1308,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 200,
+    "starting_ayah": 1315,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 201,
+    "starting_ayah": 1322,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 202,
+    "starting_ayah": 1329,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 203,
+    "starting_ayah": 1335,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 204,
+    "starting_ayah": 1342,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 205,
+    "starting_ayah": 1347,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 206,
+    "starting_ayah": 1353,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 207,
+    "starting_ayah": 1358,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 208,
+    "starting_ayah": 1365,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 209,
+    "starting_ayah": 1371,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 210,
+    "starting_ayah": 1379,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 211,
+    "starting_ayah": 1385,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 212,
+    "starting_ayah": 1390,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 213,
+    "starting_ayah": 1398,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 214,
+    "starting_ayah": 1407,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 215,
+    "starting_ayah": 1418,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 216,
+    "starting_ayah": 1426,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 217,
+    "starting_ayah": 1435,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 218,
+    "starting_ayah": 1443,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 219,
+    "starting_ayah": 1453,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 220,
+    "starting_ayah": 1462,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 221,
+    "starting_ayah": 1471,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 222,
+    "starting_ayah": 1479,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 223,
+    "starting_ayah": 1486,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 224,
+    "starting_ayah": 1493,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 225,
+    "starting_ayah": 1502,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 226,
+    "starting_ayah": 1511,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 227,
+    "starting_ayah": 1519,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 228,
+    "starting_ayah": 1527,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 229,
+    "starting_ayah": 1536,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 230,
+    "starting_ayah": 1545,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 231,
+    "starting_ayah": 1555,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 232,
+    "starting_ayah": 1562,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 233,
+    "starting_ayah": 1571,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 234,
+    "starting_ayah": 1582,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 235,
+    "starting_ayah": 1591,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 236,
+    "starting_ayah": 1601,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 237,
+    "starting_ayah": 1611,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 238,
+    "starting_ayah": 1619,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 239,
+    "starting_ayah": 1627,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 240,
+    "starting_ayah": 1634,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 241,
+    "starting_ayah": 1640,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 242,
+    "starting_ayah": 1649,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 243,
+    "starting_ayah": 1660,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 244,
+    "starting_ayah": 1666,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 245,
+    "starting_ayah": 1675,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 246,
+    "starting_ayah": 1683,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 247,
+    "starting_ayah": 1692,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 248,
+    "starting_ayah": 1700,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 249,
+    "starting_ayah": 1708,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 250,
+    "starting_ayah": 1713,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 251,
+    "starting_ayah": 1721,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 252,
+    "starting_ayah": 1726,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 253,
+    "starting_ayah": 1736,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 254,
+    "starting_ayah": 1742,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 255,
+    "starting_ayah": 1750,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 256,
+    "starting_ayah": 1756,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 257,
+    "starting_ayah": 1761,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 258,
+    "starting_ayah": 1769,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 259,
+    "starting_ayah": 1775,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 260,
+    "starting_ayah": 1784,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 261,
+    "starting_ayah": 1793,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 262,
+    "starting_ayah": 1803,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 263,
+    "starting_ayah": 1818,
+    "number_of_ayahs": 16
+  },
+  {
+    "number": 264,
+    "starting_ayah": 1834,
+    "number_of_ayahs": 20
+  },
+  {
+    "number": 265,
+    "starting_ayah": 1854,
+    "number_of_ayahs": 19
+  },
+  {
+    "number": 266,
+    "starting_ayah": 1873,
+    "number_of_ayahs": 20
+  },
+  {
+    "number": 267,
+    "starting_ayah": 1893,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 268,
+    "starting_ayah": 1908,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 269,
+    "starting_ayah": 1916,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 270,
+    "starting_ayah": 1928,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 271,
+    "starting_ayah": 1936,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 272,
+    "starting_ayah": 1944,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 273,
+    "starting_ayah": 1956,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 274,
+    "starting_ayah": 1966,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 275,
+    "starting_ayah": 1974,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 276,
+    "starting_ayah": 1981,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 277,
+    "starting_ayah": 1989,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 278,
+    "starting_ayah": 1995,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 279,
+    "starting_ayah": 2004,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 280,
+    "starting_ayah": 2012,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 281,
+    "starting_ayah": 2020,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 282,
+    "starting_ayah": 2030,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 283,
+    "starting_ayah": 2037,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 284,
+    "starting_ayah": 2047,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 285,
+    "starting_ayah": 2057,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 286,
+    "starting_ayah": 2068,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 287,
+    "starting_ayah": 2079,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 288,
+    "starting_ayah": 2088,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 289,
+    "starting_ayah": 2096,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 290,
+    "starting_ayah": 2105,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 291,
+    "starting_ayah": 2116,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 292,
+    "starting_ayah": 2126,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 293,
+    "starting_ayah": 2134,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 294,
+    "starting_ayah": 2145,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 295,
+    "starting_ayah": 2156,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 296,
+    "starting_ayah": 2161,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 297,
+    "starting_ayah": 2168,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 298,
+    "starting_ayah": 2175,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 299,
+    "starting_ayah": 2186,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 300,
+    "starting_ayah": 2194,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 301,
+    "starting_ayah": 2202,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 302,
+    "starting_ayah": 2215,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 303,
+    "starting_ayah": 2224,
+    "number_of_ayahs": 14
+  },
+  {
+    "number": 304,
+    "starting_ayah": 2238,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 305,
+    "starting_ayah": 2251,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 306,
+    "starting_ayah": 2262,
+    "number_of_ayahs": 14
+  },
+  {
+    "number": 307,
+    "starting_ayah": 2276,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 308,
+    "starting_ayah": 2289,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 309,
+    "starting_ayah": 2302,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 310,
+    "starting_ayah": 2315,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 311,
+    "starting_ayah": 2327,
+    "number_of_ayahs": 19
+  },
+  {
+    "number": 312,
+    "starting_ayah": 2346,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 313,
+    "starting_ayah": 2361,
+    "number_of_ayahs": 25
+  },
+  {
+    "number": 314,
+    "starting_ayah": 2386,
+    "number_of_ayahs": 14
+  },
+  {
+    "number": 315,
+    "starting_ayah": 2400,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 316,
+    "starting_ayah": 2413,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 317,
+    "starting_ayah": 2425,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 318,
+    "starting_ayah": 2436,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 319,
+    "starting_ayah": 2447,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 320,
+    "starting_ayah": 2462,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 321,
+    "starting_ayah": 2474,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 322,
+    "starting_ayah": 2484,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 323,
+    "starting_ayah": 2494,
+    "number_of_ayahs": 14
+  },
+  {
+    "number": 324,
+    "starting_ayah": 2508,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 325,
+    "starting_ayah": 2519,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 326,
+    "starting_ayah": 2528,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 327,
+    "starting_ayah": 2541,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 328,
+    "starting_ayah": 2556,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 329,
+    "starting_ayah": 2565,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 330,
+    "starting_ayah": 2574,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 331,
+    "starting_ayah": 2585,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 332,
+    "starting_ayah": 2596,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 333,
+    "starting_ayah": 2601,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 334,
+    "starting_ayah": 2611,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 335,
+    "starting_ayah": 2619,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 336,
+    "starting_ayah": 2626,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 337,
+    "starting_ayah": 2634,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 338,
+    "starting_ayah": 2642,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 339,
+    "starting_ayah": 2651,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 340,
+    "starting_ayah": 2660,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 341,
+    "starting_ayah": 2668,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 342,
+    "starting_ayah": 2674,
+    "number_of_ayahs": 17
+  },
+  {
+    "number": 343,
+    "starting_ayah": 2691,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 344,
+    "starting_ayah": 2701,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 345,
+    "starting_ayah": 2716,
+    "number_of_ayahs": 17
+  },
+  {
+    "number": 346,
+    "starting_ayah": 2733,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 347,
+    "starting_ayah": 2748,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 348,
+    "starting_ayah": 2763,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 349,
+    "starting_ayah": 2778,
+    "number_of_ayahs": 14
+  },
+  {
+    "number": 350,
+    "starting_ayah": 2792,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 351,
+    "starting_ayah": 2802,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 352,
+    "starting_ayah": 2812,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 353,
+    "starting_ayah": 2819,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 354,
+    "starting_ayah": 2823,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 355,
+    "starting_ayah": 2828,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 356,
+    "starting_ayah": 2835,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 357,
+    "starting_ayah": 2845,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 358,
+    "starting_ayah": 2850,
+    "number_of_ayahs": 3
+  },
+  {
+    "number": 359,
+    "starting_ayah": 2853,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 360,
+    "starting_ayah": 2858,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 361,
+    "starting_ayah": 2867,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 362,
+    "starting_ayah": 2876,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 363,
+    "starting_ayah": 2888,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 364,
+    "starting_ayah": 2899,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 365,
+    "starting_ayah": 2911,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 366,
+    "starting_ayah": 2923,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 367,
+    "starting_ayah": 2933,
+    "number_of_ayahs": 19
+  },
+  {
+    "number": 368,
+    "starting_ayah": 2952,
+    "number_of_ayahs": 20
+  },
+  {
+    "number": 369,
+    "starting_ayah": 2972,
+    "number_of_ayahs": 21
+  },
+  {
+    "number": 370,
+    "starting_ayah": 2993,
+    "number_of_ayahs": 23
+  },
+  {
+    "number": 371,
+    "starting_ayah": 3016,
+    "number_of_ayahs": 28
+  },
+  {
+    "number": 372,
+    "starting_ayah": 3044,
+    "number_of_ayahs": 25
+  },
+  {
+    "number": 373,
+    "starting_ayah": 3069,
+    "number_of_ayahs": 23
+  },
+  {
+    "number": 374,
+    "starting_ayah": 3092,
+    "number_of_ayahs": 24
+  },
+  {
+    "number": 375,
+    "starting_ayah": 3116,
+    "number_of_ayahs": 23
+  },
+  {
+    "number": 376,
+    "starting_ayah": 3139,
+    "number_of_ayahs": 21
+  },
+  {
+    "number": 377,
+    "starting_ayah": 3160,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 378,
+    "starting_ayah": 3173,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 379,
+    "starting_ayah": 3182,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 380,
+    "starting_ayah": 3195,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 381,
+    "starting_ayah": 3204,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 382,
+    "starting_ayah": 3215,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 383,
+    "starting_ayah": 3223,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 384,
+    "starting_ayah": 3236,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 385,
+    "starting_ayah": 3248,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 386,
+    "starting_ayah": 3258,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 387,
+    "starting_ayah": 3266,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 388,
+    "starting_ayah": 3274,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 389,
+    "starting_ayah": 3281,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 390,
+    "starting_ayah": 3288,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 391,
+    "starting_ayah": 3296,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 392,
+    "starting_ayah": 3303,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 393,
+    "starting_ayah": 3312,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 394,
+    "starting_ayah": 3323,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 395,
+    "starting_ayah": 3330,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 396,
+    "starting_ayah": 3337,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 397,
+    "starting_ayah": 3347,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 398,
+    "starting_ayah": 3355,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 399,
+    "starting_ayah": 3364,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 400,
+    "starting_ayah": 3371,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 401,
+    "starting_ayah": 3379,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 402,
+    "starting_ayah": 3386,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 403,
+    "starting_ayah": 3393,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 404,
+    "starting_ayah": 3404,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 405,
+    "starting_ayah": 3415,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 406,
+    "starting_ayah": 3425,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 407,
+    "starting_ayah": 3434,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 408,
+    "starting_ayah": 3442,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 409,
+    "starting_ayah": 3451,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 410,
+    "starting_ayah": 3460,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 411,
+    "starting_ayah": 3470,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 412,
+    "starting_ayah": 3481,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 413,
+    "starting_ayah": 3489,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 414,
+    "starting_ayah": 3498,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 415,
+    "starting_ayah": 3504,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 416,
+    "starting_ayah": 3515,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 417,
+    "starting_ayah": 3524,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 418,
+    "starting_ayah": 3534,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 419,
+    "starting_ayah": 3540,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 420,
+    "starting_ayah": 3549,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 421,
+    "starting_ayah": 3556,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 422,
+    "starting_ayah": 3564,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 423,
+    "starting_ayah": 3569,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 424,
+    "starting_ayah": 3577,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 425,
+    "starting_ayah": 3584,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 426,
+    "starting_ayah": 3588,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 427,
+    "starting_ayah": 3596,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 428,
+    "starting_ayah": 3607,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 429,
+    "starting_ayah": 3614,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 430,
+    "starting_ayah": 3621,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 431,
+    "starting_ayah": 3629,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 432,
+    "starting_ayah": 3638,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 433,
+    "starting_ayah": 3646,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 434,
+    "starting_ayah": 3655,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 435,
+    "starting_ayah": 3664,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 436,
+    "starting_ayah": 3672,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 437,
+    "starting_ayah": 3679,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 438,
+    "starting_ayah": 3691,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 439,
+    "starting_ayah": 3699,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 440,
+    "starting_ayah": 3705,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 441,
+    "starting_ayah": 3718,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 442,
+    "starting_ayah": 3733,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 443,
+    "starting_ayah": 3746,
+    "number_of_ayahs": 14
+  },
+  {
+    "number": 444,
+    "starting_ayah": 3760,
+    "number_of_ayahs": 16
+  },
+  {
+    "number": 445,
+    "starting_ayah": 3776,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 446,
+    "starting_ayah": 3789,
+    "number_of_ayahs": 24
+  },
+  {
+    "number": 447,
+    "starting_ayah": 3813,
+    "number_of_ayahs": 27
+  },
+  {
+    "number": 448,
+    "starting_ayah": 3840,
+    "number_of_ayahs": 25
+  },
+  {
+    "number": 449,
+    "starting_ayah": 3865,
+    "number_of_ayahs": 26
+  },
+  {
+    "number": 450,
+    "starting_ayah": 3891,
+    "number_of_ayahs": 24
+  },
+  {
+    "number": 451,
+    "starting_ayah": 3915,
+    "number_of_ayahs": 27
+  },
+  {
+    "number": 452,
+    "starting_ayah": 3942,
+    "number_of_ayahs": 29
+  },
+  {
+    "number": 453,
+    "starting_ayah": 3971,
+    "number_of_ayahs": 16
+  },
+  {
+    "number": 454,
+    "starting_ayah": 3987,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 455,
+    "starting_ayah": 3997,
+    "number_of_ayahs": 16
+  },
+  {
+    "number": 456,
+    "starting_ayah": 4013,
+    "number_of_ayahs": 19
+  },
+  {
+    "number": 457,
+    "starting_ayah": 4032,
+    "number_of_ayahs": 22
+  },
+  {
+    "number": 458,
+    "starting_ayah": 4054,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 459,
+    "starting_ayah": 4064,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 460,
+    "starting_ayah": 4069,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 461,
+    "starting_ayah": 4080,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 462,
+    "starting_ayah": 4090,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 463,
+    "starting_ayah": 4099,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 464,
+    "starting_ayah": 4106,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 465,
+    "starting_ayah": 4115,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 466,
+    "starting_ayah": 4126,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 467,
+    "starting_ayah": 4133,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 468,
+    "starting_ayah": 4141,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 469,
+    "starting_ayah": 4150,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 470,
+    "starting_ayah": 4159,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 471,
+    "starting_ayah": 4167,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 472,
+    "starting_ayah": 4174,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 473,
+    "starting_ayah": 4183,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 474,
+    "starting_ayah": 4192,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 475,
+    "starting_ayah": 4200,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 476,
+    "starting_ayah": 4211,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 477,
+    "starting_ayah": 4219,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 478,
+    "starting_ayah": 4230,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 479,
+    "starting_ayah": 4239,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 480,
+    "starting_ayah": 4248,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 481,
+    "starting_ayah": 4257,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 482,
+    "starting_ayah": 4265,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 483,
+    "starting_ayah": 4273,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 484,
+    "starting_ayah": 4283,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 485,
+    "starting_ayah": 4288,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 486,
+    "starting_ayah": 4295,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 487,
+    "starting_ayah": 4304,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 488,
+    "starting_ayah": 4317,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 489,
+    "starting_ayah": 4324,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 490,
+    "starting_ayah": 4336,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 491,
+    "starting_ayah": 4348,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 492,
+    "starting_ayah": 4359,
+    "number_of_ayahs": 14
+  },
+  {
+    "number": 493,
+    "starting_ayah": 4373,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 494,
+    "starting_ayah": 4386,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 495,
+    "starting_ayah": 4399,
+    "number_of_ayahs": 16
+  },
+  {
+    "number": 496,
+    "starting_ayah": 4415,
+    "number_of_ayahs": 18
+  },
+  {
+    "number": 497,
+    "starting_ayah": 4433,
+    "number_of_ayahs": 21
+  },
+  {
+    "number": 498,
+    "starting_ayah": 4454,
+    "number_of_ayahs": 20
+  },
+  {
+    "number": 499,
+    "starting_ayah": 4474,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 500,
+    "starting_ayah": 4487,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 501,
+    "starting_ayah": 4496,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 502,
+    "starting_ayah": 4506,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 503,
+    "starting_ayah": 4516,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 504,
+    "starting_ayah": 4525,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 505,
+    "starting_ayah": 4531,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 506,
+    "starting_ayah": 4539,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 507,
+    "starting_ayah": 4546,
+    "number_of_ayahs": 11
+  },
+  {
+    "number": 508,
+    "starting_ayah": 4557,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 509,
+    "starting_ayah": 4565,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 510,
+    "starting_ayah": 4575,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 511,
+    "starting_ayah": 4584,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 512,
+    "starting_ayah": 4593,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 513,
+    "starting_ayah": 4599,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 514,
+    "starting_ayah": 4607,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 515,
+    "starting_ayah": 4612,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 516,
+    "starting_ayah": 4617,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 517,
+    "starting_ayah": 4624,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 518,
+    "starting_ayah": 4631,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 519,
+    "starting_ayah": 4646,
+    "number_of_ayahs": 20
+  },
+  {
+    "number": 520,
+    "starting_ayah": 4666,
+    "number_of_ayahs": 16
+  },
+  {
+    "number": 521,
+    "starting_ayah": 4682,
+    "number_of_ayahs": 24
+  },
+  {
+    "number": 522,
+    "starting_ayah": 4706,
+    "number_of_ayahs": 21
+  },
+  {
+    "number": 523,
+    "starting_ayah": 4727,
+    "number_of_ayahs": 23
+  },
+  {
+    "number": 524,
+    "starting_ayah": 4750,
+    "number_of_ayahs": 17
+  },
+  {
+    "number": 525,
+    "starting_ayah": 4767,
+    "number_of_ayahs": 18
+  },
+  {
+    "number": 526,
+    "starting_ayah": 4785,
+    "number_of_ayahs": 26
+  },
+  {
+    "number": 527,
+    "starting_ayah": 4811,
+    "number_of_ayahs": 18
+  },
+  {
+    "number": 528,
+    "starting_ayah": 4829,
+    "number_of_ayahs": 24
+  },
+  {
+    "number": 529,
+    "starting_ayah": 4853,
+    "number_of_ayahs": 21
+  },
+  {
+    "number": 530,
+    "starting_ayah": 4874,
+    "number_of_ayahs": 22
+  },
+  {
+    "number": 531,
+    "starting_ayah": 4896,
+    "number_of_ayahs": 22
+  },
+  {
+    "number": 532,
+    "starting_ayah": 4918,
+    "number_of_ayahs": 24
+  },
+  {
+    "number": 533,
+    "starting_ayah": 4942,
+    "number_of_ayahs": 27
+  },
+  {
+    "number": 534,
+    "starting_ayah": 4969,
+    "number_of_ayahs": 27
+  },
+  {
+    "number": 535,
+    "starting_ayah": 4996,
+    "number_of_ayahs": 34
+  },
+  {
+    "number": 536,
+    "starting_ayah": 5030,
+    "number_of_ayahs": 26
+  },
+  {
+    "number": 537,
+    "starting_ayah": 5056,
+    "number_of_ayahs": 23
+  },
+  {
+    "number": 538,
+    "starting_ayah": 5079,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 539,
+    "starting_ayah": 5087,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 540,
+    "starting_ayah": 5094,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 541,
+    "starting_ayah": 5100,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 542,
+    "starting_ayah": 5105,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 543,
+    "starting_ayah": 5111,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 544,
+    "starting_ayah": 5116,
+    "number_of_ayahs": 10
+  },
+  {
+    "number": 545,
+    "starting_ayah": 5126,
+    "number_of_ayahs": 4
+  },
+  {
+    "number": 546,
+    "starting_ayah": 5130,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 547,
+    "starting_ayah": 5136,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 548,
+    "starting_ayah": 5143,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 549,
+    "starting_ayah": 5151,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 550,
+    "starting_ayah": 5156,
+    "number_of_ayahs": 6
+  },
+  {
+    "number": 551,
+    "starting_ayah": 5162,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 552,
+    "starting_ayah": 5169,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 553,
+    "starting_ayah": 5178,
+    "number_of_ayahs": 8
+  },
+  {
+    "number": 554,
+    "starting_ayah": 5186,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 555,
+    "starting_ayah": 5193,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 556,
+    "starting_ayah": 5200,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 557,
+    "starting_ayah": 5209,
+    "number_of_ayahs": 9
+  },
+  {
+    "number": 558,
+    "starting_ayah": 5218,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 559,
+    "starting_ayah": 5223,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 560,
+    "starting_ayah": 5230,
+    "number_of_ayahs": 7
+  },
+  {
+    "number": 561,
+    "starting_ayah": 5237,
+    "number_of_ayahs": 5
+  },
+  {
+    "number": 562,
+    "starting_ayah": 5242,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 563,
+    "starting_ayah": 5254,
+    "number_of_ayahs": 14
+  },
+  {
+    "number": 564,
+    "starting_ayah": 5268,
+    "number_of_ayahs": 19
+  },
+  {
+    "number": 565,
+    "starting_ayah": 5287,
+    "number_of_ayahs": 27
+  },
+  {
+    "number": 566,
+    "starting_ayah": 5314,
+    "number_of_ayahs": 18
+  },
+  {
+    "number": 567,
+    "starting_ayah": 5332,
+    "number_of_ayahs": 26
+  },
+  {
+    "number": 568,
+    "starting_ayah": 5358,
+    "number_of_ayahs": 28
+  },
+  {
+    "number": 569,
+    "starting_ayah": 5386,
+    "number_of_ayahs": 29
+  },
+  {
+    "number": 570,
+    "starting_ayah": 5415,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 571,
+    "starting_ayah": 5430,
+    "number_of_ayahs": 18
+  },
+  {
+    "number": 572,
+    "starting_ayah": 5448,
+    "number_of_ayahs": 13
+  },
+  {
+    "number": 573,
+    "starting_ayah": 5461,
+    "number_of_ayahs": 15
+  },
+  {
+    "number": 574,
+    "starting_ayah": 5476,
+    "number_of_ayahs": 19
+  },
+  {
+    "number": 575,
+    "starting_ayah": 5495,
+    "number_of_ayahs": 18
+  },
+  {
+    "number": 576,
+    "starting_ayah": 5513,
+    "number_of_ayahs": 30
+  },
+  {
+    "number": 577,
+    "starting_ayah": 5543,
+    "number_of_ayahs": 28
+  },
+  {
+    "number": 578,
+    "starting_ayah": 5571,
+    "number_of_ayahs": 26
+  },
+  {
+    "number": 579,
+    "starting_ayah": 5597,
+    "number_of_ayahs": 20
+  },
+  {
+    "number": 580,
+    "starting_ayah": 5617,
+    "number_of_ayahs": 25
+  },
+  {
+    "number": 581,
+    "starting_ayah": 5642,
+    "number_of_ayahs": 31
+  },
+  {
+    "number": 582,
+    "starting_ayah": 5673,
+    "number_of_ayahs": 30
+  },
+  {
+    "number": 583,
+    "starting_ayah": 5703,
+    "number_of_ayahs": 25
+  },
+  {
+    "number": 584,
+    "starting_ayah": 5728,
+    "number_of_ayahs": 31
+  },
+  {
+    "number": 585,
+    "starting_ayah": 5759,
+    "number_of_ayahs": 42
+  },
+  {
+    "number": 586,
+    "starting_ayah": 5801,
+    "number_of_ayahs": 29
+  },
+  {
+    "number": 587,
+    "starting_ayah": 5830,
+    "number_of_ayahs": 25
+  },
+  {
+    "number": 588,
+    "starting_ayah": 5855,
+    "number_of_ayahs": 28
+  },
+  {
+    "number": 589,
+    "starting_ayah": 5883,
+    "number_of_ayahs": 27
+  },
+  {
+    "number": 590,
+    "starting_ayah": 5910,
+    "number_of_ayahs": 22
+  },
+  {
+    "number": 591,
+    "starting_ayah": 5932,
+    "number_of_ayahs": 32
+  },
+  {
+    "number": 592,
+    "starting_ayah": 5964,
+    "number_of_ayahs": 30
+  },
+  {
+    "number": 593,
+    "starting_ayah": 5994,
+    "number_of_ayahs": 23
+  },
+  {
+    "number": 594,
+    "starting_ayah": 6017,
+    "number_of_ayahs": 27
+  },
+  {
+    "number": 595,
+    "starting_ayah": 6044,
+    "number_of_ayahs": 29
+  },
+  {
+    "number": 596,
+    "starting_ayah": 6073,
+    "number_of_ayahs": 26
+  },
+  {
+    "number": 597,
+    "starting_ayah": 6099,
+    "number_of_ayahs": 27
+  },
+  {
+    "number": 598,
+    "starting_ayah": 6126,
+    "number_of_ayahs": 12
+  },
+  {
+    "number": 599,
+    "starting_ayah": 6138,
+    "number_of_ayahs": 18
+  },
+  {
+    "number": 600,
+    "starting_ayah": 6156,
+    "number_of_ayahs": 21
+  },
+  {
+    "number": 601,
+    "starting_ayah": 6177,
+    "number_of_ayahs": 17
+  },
+  {
+    "number": 602,
+    "starting_ayah": 6194,
+    "number_of_ayahs": 14
+  },
+  {
+    "number": 603,
+    "starting_ayah": 6208,
+    "number_of_ayahs": 14
+  },
+  {
+    "number": 604,
+    "starting_ayah": 6222,
+    "number_of_ayahs": 15
+  }
+]

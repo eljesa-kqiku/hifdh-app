@@ -24,6 +24,21 @@
     "en": "Hizb Quarter",
     "sq": "Cerek Hizb"
   },
+  "lbl_custom_pages": {
+    "ar": "صفحات مخصصة",
+    "en": "Custom Pages",
+    "sq": "Faqe sipas dëshirës"
+  },
+  "lbl_from_page": {
+    "ar": "من الصفحة",
+    "en": "From page",
+    "sq": "Nga faqja"
+  },
+  "lbl_to_page": {
+    "ar": "إلى الصفحة",
+    "en": "To page",
+    "sq": "Deri te faqja"
+  },
   "lbl_select": {
     "ar": "اختر",
     "en": "Select",
@@ -53,6 +68,11 @@
     "ar": "اختر جزء الحزب",
     "en": "Select Hizb Part",
     "sq": "Zgjedh pjesen e Hizbit"
+  },
+  "lbl_pages_range": {
+    "ar": "نطاق الصفحات",
+    "en": "Page range",
+    "sq": "Intervali i faqeve"
   },
   "lbl_app_description": {
     "ar": "اختر سورة أو جزءًا أو حزبًا للتدرب عليه. سيعرض التطبيق آية عشوائية من اختيارك - تذكر الآية التالية من ذاكرتك، ثم اكشفها للتحقق. استخدم الترجمة وتشغيل الصوت لتأكيد حفظك وتحسينه.",
@@ -98,5 +118,70 @@
     "ar": "إيقاف مؤقت",
     "en": "Pause",
     "sq": "Pauzo"
+  },
+  "lbl_show_info": {
+    "ar": "عرض المعلومات",
+    "en": "Show info",
+    "sq": "Shfaq informacionin"
+  },
+  "lbl_hide_info": {
+    "ar": "إخفاء المعلومات",
+    "en": "Hide info",
+    "sq": "Fshih informacionin"
+  },
+  "lbl_mode_memorization": {
+    "ar": "وضع الحفظ",
+    "en": "Memorization",
+    "sq": "Memorizimi"
+  },
+  "lbl_mode_repetition": {
+    "ar": "عداد التكرار",
+    "en": "Repetition Counter",
+    "sq": "Numëruesi i përsëritjeve"
+  },
+  "lbl_repetitions": {
+    "ar": "التكرارات",
+    "en": "Repetitions",
+    "sq": "Përsëritjet"
+  },
+  "lbl_add_one": {
+    "ar": "إضافة واحد",
+    "en": "Add one",
+    "sq": "Shto një"
+  },
+  "lbl_reset": {
+    "ar": "إعادة التعيين",
+    "en": "Reset",
+    "sq": "Rivendos"
+  },
+  "lbl_next": {
+    "ar": "التالية",
+    "en": "Next",
+    "sq": "Tjetri"
+  },
+  "lbl_history": {
+    "ar": "السجل",
+    "en": "History",
+    "sq": "Historiku"
+  },
+  "lbl_times": {
+    "ar": "مرة",
+    "en": "times",
+    "sq": "herë"
+  },
+  "lbl_no_history": {
+    "ar": "لا يوجد سجل بعد",
+    "en": "No history yet",
+    "sq": "Ende nuk ka histori"
+  },
+  "lbl_ayah": {
+    "ar": "آية",
+    "en": "Ayah",
+    "sq": "Ajeti"
+  },
+  "lbl_clear_history": {
+    "ar": "مسح السجل",
+    "en": "Clear history",
+    "sq": "Pastro historinë"
   }
 }
