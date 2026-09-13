@@ -10,23 +10,23 @@
 }
 
 body {
-  --main-color: #0f7a4a;
-  --main-color-soft: #34a36b;
-  --accent: #bff0d2;
-  --light: #eaf7ef;
-  --dark: #0c2a1d;
+  --main-color: #005264;
+  --main-color-soft: #348fa3;
+  --accent: #bfe7f0;
+  --light: #eaf5f7;
+  --dark: #0c252a;
 
-  --background-color: #f4fbf6;
+  --background-color: #f4fafb;
   --background-light-color: #ffffff;
   --surface-color: rgba(255, 255, 255, 0.72);
-  --border-color: #d8ecdd;
+  --border-color: #d8e8ec;
 
   --text-color: var(--dark);
-  --text-muted: #5d7a6a;
+  --text-muted: #5d757a;
 
-  --shadow-sm: 0 1px 2px rgba(12, 42, 29, 0.06);
-  --shadow-md: 0 8px 24px rgba(12, 42, 29, 0.08);
-  --shadow-lg: 0 18px 48px rgba(12, 42, 29, 0.12);
+  --shadow-sm: 0 1px 2px rgba(12, 37, 42, 0.06);
+  --shadow-md: 0 8px 24px rgba(12, 37, 42, 0.08);
+  --shadow-lg: 0 18px 48px rgba(12, 37, 42, 0.12);
 
   --radius-sm: 10px;
   --radius-md: 16px;
@@ -44,7 +44,7 @@ body,
   min-height: 100vh;
 }
 
-/* soft radial green glow behind everything */
+/* soft radial teal glow behind everything, matching the app icon */
 body::before {
   content: "";
   position: fixed;
@@ -52,9 +52,9 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(55% 45% at 20% 15%, rgba(52, 163, 107, 0.18), transparent 70%),
-    radial-gradient(45% 40% at 85% 10%, rgba(191, 240, 210, 0.45), transparent 70%),
-    radial-gradient(60% 50% at 50% 110%, rgba(52, 163, 107, 0.12), transparent 70%);
+    radial-gradient(55% 45% at 20% 15%, rgba(52, 143, 163, 0.18), transparent 70%),
+    radial-gradient(45% 40% at 85% 10%, rgba(191, 231, 240, 0.45), transparent 70%),
+    radial-gradient(60% 50% at 50% 110%, rgba(52, 143, 163, 0.12), transparent 70%);
 }
 
 * {

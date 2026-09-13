@@ -158,7 +158,7 @@ const selectThemeOverrides = {
       borderHover: '1px solid var(--main-color-soft)',
       borderActive: '1px solid var(--main-color)',
       borderFocus: '1px solid var(--main-color)',
-      boxShadowFocus: '0 0 0 3px rgba(52,163,107,0.18)',
+      boxShadowFocus: '0 0 0 3px rgba(52,143,163,0.18)',
       heightLarge: '48px',
     },
   },
@@ -170,7 +170,7 @@ const inputNumberThemeOverrides = {
       border: '1px solid var(--border-color)',
       borderHover: '1px solid var(--main-color-soft)',
       borderFocus: '1px solid var(--main-color)',
-      boxShadowFocus: '0 0 0 3px rgba(52,163,107,0.18)',
+      boxShadowFocus: '0 0 0 3px rgba(52,143,163,0.18)',
       heightLarge: '48px',
       color: '#ffffff',
     },
@@ -326,13 +326,13 @@ function setSelection() {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  box-shadow: 0 10px 24px rgba(15, 122, 74, 0.28);
+  box-shadow: 0 10px 24px rgba(0, 82, 100, 0.28);
   transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
 }
 
 .cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 14px 28px rgba(15, 122, 74, 0.32);
+  box-shadow: 0 14px 28px rgba(0, 82, 100, 0.32);
 }
 
 .cta:active {

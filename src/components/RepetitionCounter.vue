@@ -164,7 +164,7 @@ function clearHistory() {
 }
 
 .rep-card {
-  background: linear-gradient(180deg, #ffffff 0%, #f5fbf7 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f2f9fb 100%);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 24px 20px 26px;
@@ -229,7 +229,7 @@ function clearHistory() {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 14px 30px rgba(15, 122, 74, 0.32);
+  box-shadow: 0 14px 30px rgba(0, 82, 100, 0.32);
   transition: transform 0.12s ease, box-shadow 0.15s ease, filter 0.15s ease;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -237,7 +237,7 @@ function clearHistory() {
 
 .plus-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 18px 36px rgba(15, 122, 74, 0.36);
+  box-shadow: 0 18px 36px rgba(0, 82, 100, 0.36);
 }
 
 .plus-btn:active {
@@ -294,7 +294,7 @@ function clearHistory() {
   background: linear-gradient(135deg, var(--main-color-soft), var(--main-color));
   color: #ffffff;
   border-color: transparent;
-  box-shadow: 0 10px 24px rgba(15, 122, 74, 0.24);
+  box-shadow: 0 10px 24px rgba(0, 82, 100, 0.24);
 }
 
 .action-btn--primary:hover:not(:disabled) {

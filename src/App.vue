@@ -1,5 +1,5 @@
 <template>
-  <n-config-provider :rtl="rtlStyles">
+  <n-config-provider :rtl="rtlStyles" :theme-overrides="themeOverrides">
     <div class="app-shell" :dir="dir">
       <AppHeader />
       <main class="app-main">
@@ -23,6 +23,15 @@ import AppHeader from "@/components/AppHeader.vue";
 const { locale } = useI18n();
 const dir = computed(() => (locale.value === "ar" ? "rtl" : "ltr"));
 const rtlStyles = computed(() => (locale.value === "ar" ? [selectRtl, inputNumberRtl] : []));
+
+const themeOverrides = {
+  common: {
+    primaryColor: "#1888a0",
+    primaryColorHover: "#3698ad",
+    primaryColorPressed: "#0c667a",
+    primaryColorSuppl: "#3698ad",
+  },
+};
 
 watchEffect(() => {
   document.documentElement.dir = dir.value;

@@ -238,7 +238,7 @@ onBeforeUnmount(() => {
 }
 
 .ayah-card--current {
-  background: linear-gradient(180deg, #ffffff 0%, #f5fbf7 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f2f9fb 100%);
 }
 
 .ayah-card--next {
@@ -326,7 +326,7 @@ onBeforeUnmount(() => {
   background: linear-gradient(135deg, var(--main-color-soft), var(--main-color));
   color: #ffffff;
   border-color: transparent;
-  box-shadow: 0 6px 16px rgba(15, 122, 74, 0.3);
+  box-shadow: 0 6px 16px rgba(0, 82, 100, 0.3);
 }
 
 .icon-btn.playing:hover {
@@ -432,7 +432,7 @@ onBeforeUnmount(() => {
   background: linear-gradient(135deg, var(--main-color-soft), var(--main-color));
   color: #ffffff;
   border-color: transparent;
-  box-shadow: 0 10px 24px rgba(15, 122, 74, 0.24);
+  box-shadow: 0 10px 24px rgba(0, 82, 100, 0.24);
 }
 
 .action-btn--primary:hover {
