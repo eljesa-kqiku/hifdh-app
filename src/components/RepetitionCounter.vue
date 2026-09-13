@@ -7,10 +7,10 @@
         class="history-row"
       >
         <span class="history-row__label">
-          {{ $t('lbl_ayah') }} {{ item.id }}
+          {{ $t('lbl_ayah') }} {{ localizeNumber(item.id, locale) }}
         </span>
         <span class="history-row__count">
-          {{ item.count }} {{ $t('lbl_times') }}
+          {{ localizeNumber(item.count, locale) }} {{ $t('lbl_times') }}
         </span>
       </div>
     </TransitionGroup>
@@ -18,14 +18,14 @@
     <article class="rep-card">
       <header class="rep-card__header">
         <span class="rep-card__label">
-          {{ $t('lbl_ayah') }} {{ currentIndex }}
+          {{ $t('lbl_ayah') }} {{ localizeNumber(currentIndex, locale) }}
         </span>
       </header>
 
       <div class="counter">
         <span class="counter__label">{{ $t('lbl_repetitions') }}</span>
         <Transition name="count-pop" mode="out-in">
-          <span :key="count" class="counter__value">{{ count }}</span>
+          <span :key="count" class="counter__value">{{ localizeNumber(count, locale) }}</span>
         </Transition>
       </div>
 
@@ -62,7 +62,7 @@
           @click="nextAyah"
         >
           {{ $t('lbl_next') }}
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="action-btn__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <polyline points="9 18 15 12 9 6"/>
           </svg>
         </button>
@@ -82,6 +82,10 @@
 
 <script setup>
 import { computed, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { localizeNumber } from "@/common/numerals.js"
+
+const { locale } = useI18n()
 
 const history = ref([])
 const count = ref(0)
@@ -276,6 +280,10 @@ function clearHistory() {
   opacity: 0.5;
   cursor: not-allowed;
   box-shadow: none;
+}
+
+[dir="rtl"] .action-btn__icon {
+  transform: scaleX(-1);
 }
 
 .action-btn--ghost {

@@ -1,7 +1,6 @@
 <template>
   <div class="main-content">
     <section class="hero">
-      <span class="hero__badge">{{ $t('lbl_al_hifdh') }}</span>
       <h2 class="hero__title">{{ $t('lbl_app_title') }}</h2>
       <p class="hero__description">{{ $t('lbl_app_description') }}</p>
     </section>
@@ -18,7 +17,7 @@
         <span class="mode-switch__icon" aria-hidden="true">
           <component :is="opt.icon" />
         </span>
-        <span>{{ opt.label }}</span>
+        <span class="mode-switch__label">{{ opt.label }}</span>
       </button>
     </div>
 
@@ -199,15 +198,20 @@ async function onReveal(index) {
   font-size: 13px;
   padding: 10px 6px;
   border-radius: 10px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
+  min-width: 0;
   cursor: pointer;
   transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
-  white-space: nowrap;
+}
+
+.mode-switch__label {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .mode-switch__btn:hover {
@@ -224,6 +228,7 @@ async function onReveal(index) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .panel {

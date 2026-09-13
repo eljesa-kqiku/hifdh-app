@@ -25,7 +25,7 @@
                 v-if="isInfoVisible(item.number) && item.data?.numberInSurah"
                 class="ayah-card__badge"
               >
-                {{ item.data.surah?.englishName }} · {{ item.data.numberInSurah }}
+                {{ surahName(item.data.surah) }} · {{ localizeNumber(item.data.numberInSurah, locale) }}
               </span>
             </Transition>
             <button
@@ -96,8 +96,14 @@
 <script setup>
 import { nextTick, onBeforeUnmount, ref, watch } from "vue";
 import { useI18n } from 'vue-i18n'
+import { localizeNumber } from "@/common/numerals.js"
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+
+function surahName(surah) {
+  if (!surah) return ''
+  return locale.value === 'ar' ? surah.name : surah.englishName
+}
 
 const RECITER_EDITION = 'ar.alafasy'
 const AUDIO_BASE = `https://cdn.islamic.network/quran/audio/128/${RECITER_EDITION}`
@@ -116,7 +122,7 @@ function setCardRef(el, index) {
 }
 
 function nextLabel(index) {
-  return index === 1 ? t('lbl_next_ayah') : `${t('lbl_next_ayah')} +${index - 1}`
+  return index === 1 ? t('lbl_next_ayah') : `${t('lbl_next_ayah')} +${localizeNumber(index - 1, locale.value)}`
 }
 
 const playingNumber = ref(null)

@@ -1,13 +1,8 @@
 {
   "lbl_app_title": {
-    "ar": "اختبار الحفظ",
-    "en": "Ikhtibār al-Hifz",
-    "sq": "Ikhtibār al-Hifz"
-  },
-  "lbl_al_hifdh": {
-    "ar": "الحفظ",
-    "en": "al-Ḥifẓ",
-    "sq": "al-Ḥifẓ"
+    "ar": "آية عشوائية",
+    "en": "Random Ayah",
+    "sq": "Ajet i Rastësishëm"
   },
   "lbl_surah": {
     "ar": "سورة",
@@ -19,15 +14,20 @@
     "en": "Juz",
     "sq": "Xhuz"
   },
+  "lbl_juz_item": {
+    "ar": "جزء {n}",
+    "en": "Juz {n}",
+    "sq": "Xhuzi {n}"
+  },
   "lbl_hizb_quarter": {
     "ar": "ربع حزب",
     "en": "Hizb Quarter",
     "sq": "Cerek Hizb"
   },
   "lbl_custom_pages": {
-    "ar": "صفحات مخصصة",
-    "en": "Custom Pages",
-    "sq": "Faqe sipas dëshirës"
+    "ar": "صفحات",
+    "en": "Pages",
+    "sq": "Faqe"
   },
   "lbl_from_page": {
     "ar": "من الصفحة",

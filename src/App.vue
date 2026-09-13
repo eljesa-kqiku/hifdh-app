@@ -1,15 +1,33 @@
 <template>
-  <div class="app-shell">
-    <AppHeader />
-    <main class="app-main">
-      <MainContent />
-    </main>
-  </div>
+  <n-config-provider :rtl="rtlStyles">
+    <div class="app-shell" :dir="dir">
+      <AppHeader />
+      <main class="app-main">
+        <MainContent />
+      </main>
+    </div>
+  </n-config-provider>
 </template>
 
 <script setup>
+import { computed, watchEffect } from "vue";
+import { useI18n } from "vue-i18n";
+import {
+  NConfigProvider,
+  unstableSelectRtl as selectRtl,
+  unstableInputNumberRtl as inputNumberRtl,
+} from "naive-ui";
 import MainContent from "@/components/MainContent.vue";
 import AppHeader from "@/components/AppHeader.vue";
+
+const { locale } = useI18n();
+const dir = computed(() => (locale.value === "ar" ? "rtl" : "ltr"));
+const rtlStyles = computed(() => (locale.value === "ar" ? [selectRtl, inputNumberRtl] : []));
+
+watchEffect(() => {
+  document.documentElement.dir = dir.value;
+  document.documentElement.lang = locale.value;
+});
 </script>
 
 <style scoped>

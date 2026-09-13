@@ -3,20 +3,10 @@
     <div class="app-header__inner">
       <div class="brand">
         <div class="brand__logo" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#34a36b"/>
-                <stop offset="1" stop-color="#0f7a4a"/>
-              </linearGradient>
-            </defs>
-            <circle cx="16" cy="16" r="13" stroke="url(#logoGrad)" stroke-width="3"/>
-            <circle cx="16" cy="16" r="5" fill="url(#logoGrad)"/>
-          </svg>
+          <img :src="`${appBaseUrl}icon.png`" alt="" class="brand__logo-img" />
         </div>
         <div class="brand__text">
           <h1 class="brand__title">{{ $t('lbl_app_title') }}</h1>
-          <p class="brand__subtitle">{{ $t('lbl_al_hifdh') }}</p>
         </div>
       </div>
 
@@ -40,6 +30,8 @@
 import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n()
+
+const appBaseUrl = import.meta.env.BASE_URL
 
 const languages = [
   { code: 'sq', label: 'SQ' },
@@ -84,12 +76,19 @@ function setLocale(code) {
   width: 44px;
   height: 44px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #eaf7ef, #ffffff);
   border: 1px solid var(--border-color);
   display: grid;
   place-items: center;
   box-shadow: var(--shadow-sm);
   flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.brand__logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .brand__text {

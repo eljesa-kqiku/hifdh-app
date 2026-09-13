@@ -12,7 +12,7 @@
         <span class="type-picker__icon" aria-hidden="true">
           <component :is="opt.icon" />
         </span>
-        <span>{{ opt.label }}</span>
+        <span class="type-picker__label">{{ opt.label }}</span>
       </button>
     </div>
 
@@ -44,27 +44,33 @@
         <div class="input-item">
           <label class="input-label">{{ $t('lbl_from_page') }}</label>
           <n-input-number
+            :key="`from-${locale}`"
             v-model:value="fromPage"
             :min="1"
             :max="totalPages"
             size="large"
             :theme-overrides="inputNumberThemeOverrides"
-            :placeholder="String(1)"
+            :placeholder="localizeNumber(1, locale)"
+            :format="(v) => localizeNumber(v, locale)"
+            :parse="parsePageInput"
           />
         </div>
         <div class="input-item">
           <label class="input-label">{{ $t('lbl_to_page') }}</label>
           <n-input-number
+            :key="`to-${locale}`"
             v-model:value="toPage"
             :min="1"
             :max="totalPages"
             size="large"
             :theme-overrides="inputNumberThemeOverrides"
-            :placeholder="String(totalPages)"
+            :placeholder="localizeNumber(totalPages, locale)"
+            :format="(v) => localizeNumber(v, locale)"
+            :parse="parsePageInput"
           />
         </div>
         <p class="range-hint">
-          {{ $t('lbl_pages_range') }}: 1 – {{ totalPages }}
+          {{ $t('lbl_pages_range') }}: {{ localizeNumber(1, locale) }} – {{ localizeNumber(totalPages, locale) }}
         </p>
       </template>
     </div>
@@ -86,9 +92,15 @@ import Juz from "@/assets/data/juz.json"
 import Pages from "@/assets/data/pages.json"
 import { computed, h, ref } from "vue"
 import { useI18n } from 'vue-i18n'
+import { localizeNumber, toWesternDigits } from "@/common/numerals.js"
 
 const { t } = useI18n()
 const { locale } = useI18n()
+
+function parsePageInput(input) {
+  const parsed = Number.parseInt(toWesternDigits(input), 10)
+  return Number.isNaN(parsed) ? null : parsed
+}
 const emit = defineEmits(["setSelection"])
 
 defineProps({
@@ -129,10 +141,13 @@ const surahOptions = computed(() => Surahs?.map(surah => ({
   label: locale.value === 'ar' ? surah.arabic_name : surah.english_name,
   value: surah.english_name,
 })))
-const juzOptions = Juz?.map(juz => ({
-  label: juz.number,
-  value: juz.number,
-  description: `(${t('lbl_page')} ${juz.page})`,
+const juzOptions = computed(() => Juz?.map((juz, index) => {
+  const endPage = index < Juz.length - 1 ? Juz[index + 1].page - 1 : totalPages
+  return {
+    label: t('lbl_juz_item', { n: localizeNumber(juz.number, locale.value) }),
+    value: juz.number,
+    description: `(${t('lbl_page')} ${localizeNumber(juz.page, locale.value)}-${localizeNumber(endPage, locale.value)})`,
+  }
 }))
 
 const selectThemeOverrides = {
@@ -238,15 +253,20 @@ function setSelection() {
   font-size: 13px;
   padding: 10px 6px;
   border-radius: 10px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
+  min-width: 0;
   cursor: pointer;
   transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
-  white-space: nowrap;
+}
+
+.type-picker__label {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .type-picker__btn:hover {
@@ -263,6 +283,7 @@ function setSelection() {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .inputs-grid {
@@ -329,6 +350,10 @@ function setSelection() {
 .cta__icon {
   width: 18px;
   height: 18px;
+}
+
+[dir="rtl"] .cta__icon {
+  transform: scaleX(-1);
 }
 
 @media (min-width: 640px) {

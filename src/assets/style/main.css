@@ -60,3 +60,20 @@ body::before {
 * {
   box-sizing: border-box;
 }
+
+/*
+ * naive-ui teleports popups (selects, dropdowns) to <body> using an absolutely
+ * positioned wrapper with `left: 0; right: 0` plus an explicit width. Under
+ * `direction: rtl` the CSS spec resolves that over-constrained box from the
+ * `right` edge instead of `left`, which breaks the library's own
+ * transform-based positioning. Force the wrapper back to ltr for layout, and
+ * restore rtl on its content so text/icons still mirror correctly.
+ */
+html[dir="rtl"] .v-binder-follower-container,
+html[dir="rtl"] .v-binder-follower-content {
+  direction: ltr;
+}
+
+html[dir="rtl"] .v-binder-follower-content > * {
+  direction: rtl;
+}
